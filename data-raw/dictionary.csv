@@ -1,0 +1,47 @@
+directory,file_name,variable_name,variable_type,description
+data/,handpumpstatusdata.rda,visit_date,character,Date when the water point was visited for assessment.
+data/,handpumpstatusdata.rda,waterpoint_name,character,Name or identifier of the water point being assessed.
+data/,handpumpstatusdata.rda,waterpoint_type,character,"Type of water point (e.g., borehole, well, tap)."
+data/,handpumpstatusdata.rda,latitude,numeric,Latitude coordinate of the water point.
+data/,handpumpstatusdata.rda,longitude,numeric,Longitude coordinate of the water point.
+data/,handpumpstatusdata.rda,govt_staff_available,character,Whether a government water sector staff member was present during the assessment.
+data/,handpumpstatusdata.rda,committee_permission,character,Whether permission from the Water Point or Camp Committee was obtained before the assessment.
+data/,handpumpstatusdata.rda,functionality_survey,character,Whether a water point functionality survey was conducted.
+data/,handpumpstatusdata.rda,status_changed,character,Whether the water points functionality status has changed since the previous survey/mapping.
+data/,handpumpstatusdata.rda,photo_waterpoint,character,Photo file or reference showing the water point.
+data/,handpumpstatusdata.rda,water_available,character,Whether water was available from the water point at the time of visit.
+data/,handpumpstatusdata.rda,latrines_within_50m,character,Whether there are latrines within 50 meters of the water point.
+data/,handpumpstatusdata.rda,cemetery_within_50m,character,Whether there is a cemetery within 50 meters of the water point.
+data/,handpumpstatusdata.rda,waste_within_50m,character,Whether there are waste dumps within 50 meters of the water point.
+data/,handpumpstatusdata.rda,river_within_50m,character,Whether there is a river within 50 meters of the water point.
+data/,handpumpstatusdata.rda,lake_within_50m,character,Whether there is a lake or large pond within 50 meters of the water point.
+data/,handpumpstatusdata.rda,flood_area,character,Whether the water point is located in a known flood-prone area.
+data/,handpumpstatusdata.rda,difficult_access,character,Whether accessing the water point is challenging.
+data/,handpumpstatusdata.rda,flowrate_possible,character,Whether a flow rate test could be conducted at the water point.
+data/,handpumpstatusdata.rda,flowrate_seconds,numeric,Time (in seconds) taken to fill a 20-liter bucket during the flow rate test.
+data/,handpumpstatusdata.rda,strokes_to_discharge,numeric,Number of pump strokes needed before water starts flowing from the spout.
+data/,handpumpstatusdata.rda,water_available_today,character,Whether water was available from the water point on the day of the visit.
+data/,handpumpstatusdata.rda,reason_no_water,character,Reason water was not available during the visit.
+data/,handpumpstatusdata.rda,seasonal_variation,character,Whether seasonal changes affect water availability from this source.
+data/,handpumpstatusdata.rda,when_no_water,character,Specific times of the year when water is unavailable from the source.
+data/,handpumpstatusdata.rda,pumphead_disassemble,character,Whether it was possible to disassemble the pump head during inspection.
+data/,handpumpstatusdata.rda,reason_no_disassemble,character,Reason the pump head could not be disassembled.
+data/,handpumpstatusdata.rda,reason_no_disassemble_other,character,Other specified reason why the pump head could not be disassembled.
+data/,handpumpstatusdata.rda,install_date,character,Date when the borehole or water point was installed.
+data/,handpumpstatusdata.rda,borehole_age,numeric,Approximate age of the borehole in years.
+data/,handpumpstatusdata.rda,pump_manufacturer,character,Manufacturer of the installed pump.
+data/,handpumpstatusdata.rda,pump_manufacturer_other,character,Other specified manufacturer if not listed in main options.
+data/,handpumpstatusdata.rda,drilling_contractor,character,Contractor or company that drilled the borehole.
+data/,handpumpstatusdata.rda,install_depth,numeric,Depth (in meters) of the borehole installation.
+data/,handpumpstatusdata.rda,static_water_level,numeric,Static water level measurement (depth to water before pumping).
+data/,handpumpstatusdata.rda,pumping_test_info,character,Whether original pumping test results are available.
+data/,handpumpstatusdata.rda,drilling_report_info,character,Whether the original drilling report is available.
+data/,handpumpstatusdata.rda,water_quality_info,character,Whether the original water quality test results are available.
+data/,handpumpstatusdata.rda,repaired_before,character,Whether the borehole has been repaired multiple times in the past.
+data/,handpumpstatusdata.rda,repair_attempts,character,Number of times the borehole has been repaired.
+data/,handpumpstatusdata.rda,borehole_issues,character,Main issues affecting the boreholes performance.
+data/,handpumpstatusdata.rda,borehole_issues_other,character,Other specified issues affecting the borehole.
+data/,handpumpstatusdata.rda,operational_feel,character,General operational feel of the pump during use.
+data/,handpumpstatusdata.rda,operational_feel_other,character,Other specified operational feel not covered in main categories.
+data/,handpumpstatusdata.rda,parts_for_repair,character,Afridev pump parts that may need repair or replacement.
+data/,handpumpstatusdata.rda,photo_parts,character,Photo file or reference of the Afridev pump parts inspected.
