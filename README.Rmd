@@ -1,0 +1,265 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# Handpump Functionality Verification Survey - Chiradzulu, Malawi 2020
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+This dataset contains detailed field survey records of borehole and
+handpump functionality verification exercises conducted in Chiradzulu
+District, Malawi in February 2020. Data was collected by BASEflow using
+the mWater mobile data collection platform. Each record represents a
+single site visit to a water point, capturing GPS coordinates, technical
+assessments, water availability, environmental conditions, and
+maintenance history.
+
+The dataset includes:
+
+-   Identification & Location – Visit date, water point name/type,
+    latitude, and longitude.
+
+-   Institutional Factors – Availability of government staff, committee
+    permission for inspection.
+
+-   Functionality & Condition – Operational status, water availability,
+    flow rate measurements, strokes to discharge, and mechanical
+    condition.
+
+-   Environmental Hazards – Presence of latrines, cemeteries, waste,
+    rivers, lakes, flood-prone areas, and difficult terrain within 50m.
+
+-   Repair & Maintenance History – Borehole age, manufacturer,
+    installation details, prior repairs, spare parts required, and
+    operational feel.
+
+-   Documentation – Photographs of the water point and repair parts.
+
+**Purpose**
+
+The dataset supports rural water supply monitoring, maintenance
+planning, and public health risk assessments, contributing to efforts to
+improve sustainability and reliability of community water points.
+
+**Potential Users**
+
+This dataset can be valuable to:
+
+1.  **Local Governments** – For planning maintenance schedules and
+    allocating resources to priority water points.
+
+2.  **NGOs & Development Partners** – For designing interventions to
+    improve rural water supply sustainability.
+
+3.  **Researchers & Public Health Experts** – For studying the impact of
+    infrastructure condition on water access and health outcomes.
+
+4.  **Donors & Funding Agencies** – For monitoring the effectiveness of
+    investments in water infrastructure.
+
+5.  **Community-Based Organizations** – For advocating improved water
+    services and mobilizing community-led repairs.
+
+## Installation
+
+You can install the development version of handpumpstatusdata from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/handpumpstatusdata")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/handpumpstatusdata/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+This dataset contains detailed field survey records of borehole and
+handpump functionality verification exercises conducted in Chiradzulu
+District, Malawi in February 2020.
+
+```{r}
+library(handpumpstatusdata)
+```
+
+### handpumpstatusdata
+
+The dataset `handpumpstatusdata`  has
+`r nrow(handpumpstatusdata)` observations and
+`r ncol(handpumpstatusdata)` variables
+
+```{r}
+handpumpstatusdata |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "handpumpstatusdata.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example
+
+```{r}
+library(handpumpstatusdata)
+
+# Example 1: Pie Chart Functionality Status Overview
+# Purpose: To show service availability.
+
+# Load libraries
+library(tidyverse)
+
+# Filter out NA or empty values
+data_filtered <- handpumpstatusdata %>%
+  filter(!is.na(functionality_survey), functionality_survey != "")
+
+# Summarise counts and calculate percentages
+functionality_counts <- data_filtered %>%
+  group_by(functionality_survey) %>%
+  summarise(count = n(), .groups = "drop") %>%
+  mutate(percent = round(100 * count / sum(count), 1),
+         label = paste0(percent, "%"))
+
+# Create pie chart with percentages
+ggplot(functionality_counts, aes(x = "", y = count, fill = functionality_survey)) +
+  geom_col(width = 1, color = "white") +
+  coord_polar(theta = "y") +
+  geom_text(aes(label = label),
+            position = position_stack(vjust = 0.5), color = "white", size = 4) +
+  labs(
+    title = "Functionality Status Overview",
+    fill = "Functionality"
+  ) +
+  theme_void() +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    legend.title = element_text(face = "bold")
+  )
+
+# Example 2: Environmental Risk Factors
+# Purpose: Links potential contamination risks to water point locations.
+
+# Load libraries
+library(tidyverse)
+
+# Select relevant environmental risk variables and reshape
+risk_data <- handpumpstatusdata %>%
+  select(waterpoint_name, 
+         latrines_within_50m,
+         cemetery_within_50m,
+         waste_within_50m,
+         river_within_50m,
+         lake_within_50m) %>%
+  pivot_longer(
+    cols = -waterpoint_name,
+    names_to = "risk_factor",
+    values_to = "present"
+  )
+
+# Clean labels for risk factors
+risk_data <- risk_data %>%
+  mutate(
+    risk_factor = recode(risk_factor,
+                         latrines_within_50m = "Latrines",
+                         cemetery_within_50m = "Cemeteries",
+                         waste_within_50m = "Waste",
+                         river_within_50m = "Rivers",
+                         lake_within_50m = "Lakes")
+  )
+
+# Count presence of each risk factor
+risk_counts <- risk_data %>%
+  filter(!is.na(present), tolower(present) == "yes") %>%
+  group_by(risk_factor) %>%
+  summarise(count = n(), .groups = "drop")
+
+# Stacked bar chart
+ggplot(risk_counts, aes(x = risk_factor, y = count, fill = risk_factor)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "Environmental Risk Factors within 50m",
+    x = "Risk Factor",
+    y = "Number of Water Points"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none")
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("handpumpstatusdata")
+```
