@@ -1,0 +1,3 @@
+fileName,name,contentUrl,encodingFormat
+handpumpstatusdata.csv,handpumpstatusdata,https://raw.githubusercontent.com/openwashdata/handpumpstatusdata/main/inst/extdata/handpumpstatusdata.csv,csv
+handpumpstatusdata.xlsx,handpumpstatusdata,https://raw.githubusercontent.com/openwashdata/handpumpstatusdata/main/inst/extdata/handpumpstatusdata.xlsx,ooxml

@@ -1,0 +1,36 @@
+{
+  "@context": "https://openwashdata.org/",
+  "@type": "Dataset",
+  "name": "handpumpstatusdata",
+  "description": "This dataset contains detailed field survey records of borehole and handpump functionality verification exercises conducted in Chiradzulu District, Malawi in February 2020.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "openwashdata @ Global Health Engineering, ETH Zurich",
+    "url": "https://openwashdata.org/"
+  },
+  "datePublished": "2025-08-12",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": "handpump, borehole, waterquality,borehole verification",
+  "distribution": {
+    "@type": "DataDownload",
+    "url": "https://raw.githubusercontent.com/openwashdata/handpumpstatusdata/main/inst/extdata/handpumpstatusdata.csv",
+    "contentUrl": "https://raw.githubusercontent.com/openwashdata/handpumpstatusdata/main/inst/extdata/handpumpstatusdata.csv",
+    "encodingFormat": "text/csv"
+  },
+  "encodingFormat": "CSV",
+  "version": "1.0",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Chiradzulu, Malawi"
+  },
+  "temporalCoverage": {
+    "@type": "DateTime",
+    "startDate": null,
+    "endDate": null
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Emmanuel Mhango",
+    "email": "emmanuellmhango@gmail.com"
+  }
+}
