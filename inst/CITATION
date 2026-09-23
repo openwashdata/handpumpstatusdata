@@ -11,4 +11,4 @@ bibentry(bibtype = "Misc",
          url = "https://github.com/openwashdata/handpumpstatusdata",
          abstract = "This dataset contains detailed field survey records of borehole and handpump functionality verification exercises conducted in Chiradzulu District, Malawi in February 2020.",
          keywords = "open data,washdata,handpumps,boreholes,water point functionality,water supply,Malawi,handpump,wash,waterpoints",
-         version = "0.0.0.9000")
+         version = "1.0.1")

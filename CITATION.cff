@@ -8,7 +8,7 @@ message: 'To cite package "handpumpstatusdata" in publications use:'
 type: dataset
 license: CC-BY-4.0
 title: 'handpumpstatusdata: Chiradzulu Handpump Functionality Verification Survey'
-version: 0.0.0.9000
+version: 1.0.1
 doi: 10.5281/zenodo.17474593
 abstract: This dataset contains detailed field survey records of borehole and handpump
   functionality verification exercises conducted in Chiradzulu District, Malawi in
