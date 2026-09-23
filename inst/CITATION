@@ -1,0 +1,14 @@
+
+bibentry(bibtype = "Misc",
+         key = "mhango:2026",
+         title = "handpumpstatusdata: Chiradzulu Handpump Functionality Verification Survey",
+         author = person(given = "Emmanuel",
+                         family = "Mhango",
+                         email = "emmanuellmhango@gmail.com",
+                         comment = c(ORCID = "0000-0003-3197-6244")),
+         year = "2026",
+         doi = "10.5281/zenodo.17474593",
+         url = "https://github.com/openwashdata/handpumpstatusdata",
+         abstract = "This dataset contains detailed field survey records of borehole and handpump functionality verification exercises conducted in Chiradzulu District, Malawi in February 2020.",
+         keywords = "open data,washdata,handpumps,boreholes,water point functionality,water supply,Malawi,handpump,wash,waterpoints",
+         version = "1.0.1")

@@ -30,6 +30,8 @@ knitr::opts_chunk$set(
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/1036602560.svg)](https://doi.org/10.5281/zenodo.17474593)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17474593.svg)](https://zenodo.org/doi/10.5281/zenodo.17474593)
+[![R-CMD-check](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This dataset contains detailed field survey records of borehole and
@@ -255,7 +257,7 @@ ggplot(risk_counts, aes(x = risk_factor, y = count, fill = risk_factor)) +
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/handpumpstatusdata/blob/main/LICENSE.md).
 
 ## Citation
 
