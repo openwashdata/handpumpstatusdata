@@ -10,6 +10,7 @@
 [![DOI](https://zenodo.org/badge/1036602560.svg)](https://doi.org/10.5281/zenodo.17474593)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17474593.svg)](https://zenodo.org/doi/10.5281/zenodo.17474593)
+[![R-CMD-check](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This dataset contains detailed field survey records of borehole and
