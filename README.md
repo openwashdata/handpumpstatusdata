@@ -9,6 +9,7 @@
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/1036602560.svg)](https://doi.org/10.5281/zenodo.17474593)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17474593.svg)](https://zenodo.org/doi/10.5281/zenodo.17474593)
 <!-- badges: end -->
 
 This dataset contains detailed field survey records of borehole and
@@ -119,7 +120,7 @@ handpumpstatusdata |>
   gt::as_raw_html()
 ```
 
-<div id="uowbszxovi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="rrexwvzvql" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -311,8 +312,7 @@ handpumpstatusdata |>
 <td headers="parts_for_repair" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Bush Bearings, Fulcrum Pin, Centralisers</td>
 <td headers="photo_parts" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">https://api.mwater.co/v3/images/fa4085c66170401cac3b982bfddfd7d2; https://api.mwater.co/v3/images/29afa2c6fbc04b03ab64f69c9f46ca4a; https://api.mwater.co/v3/images/92b8a444a4244f7389d89c1191309a4c; https://api.mwater.co/v3/images/5e7b0546cbca45e38c228f93dfc225bc</td></tr>
   </tbody>
-  &#10;  
-</table>
+  &#10;</table>
 </div>
 
 For an overview of the variable names, see the following table.
@@ -1272,7 +1272,7 @@ ggplot(functionality_counts, aes(x = "", y = count, fill = functionality_survey)
   )
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ``` r
 
@@ -1325,12 +1325,12 @@ ggplot(risk_counts, aes(x = risk_factor, y = count, fill = risk_factor)) +
   theme(legend.position = "none")
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-2.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-7-2.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ## License
 
 Data are available as
-[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+[CC-BY](https://github.com/openwashdata/handpumpstatusdata/blob/main/LICENSE.md).
 
 ## Citation
 
@@ -1340,17 +1340,21 @@ Please cite this package using:
 citation("handpumpstatusdata")
 #> To cite package 'handpumpstatusdata' in publications use:
 #> 
-#>   Mhango E (2025). _handpumpstatusdata: Chiradzulu Handpump
-#>   Functionality Verification Survey_. R package version 0.0.0.9000,
+#>   Mhango E (2026). "handpumpstatusdata: Chiradzulu Handpump
+#>   Functionality Verification Survey." doi:10.5281/zenodo.17474593
+#>   <https://doi.org/10.5281/zenodo.17474593>.
 #>   <https://github.com/openwashdata/handpumpstatusdata>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
+#>   @Misc{mhango:2026,
 #>     title = {handpumpstatusdata: Chiradzulu Handpump Functionality Verification Survey},
 #>     author = {Emmanuel Mhango},
-#>     year = {2025},
-#>     note = {R package version 0.0.0.9000},
+#>     year = {2026},
+#>     doi = {10.5281/zenodo.17474593},
 #>     url = {https://github.com/openwashdata/handpumpstatusdata},
+#>     abstract = {This dataset contains detailed field survey records of borehole and handpump functionality verification exercises conducted in Chiradzulu District, Malawi in February 2020.},
+#>     keywords = {open data,washdata,handpumps,boreholes,water point functionality,water supply,Malawi,handpump,wash,waterpoints},
+#>     version = {0.0.0.9000},
 #>   }
 ```
