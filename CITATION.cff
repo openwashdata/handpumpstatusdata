@@ -1,0 +1,40 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "handpumpstatusdata" in publications use:'
+type: dataset
+license: CC-BY-4.0
+title: 'handpumpstatusdata: Chiradzulu Handpump Functionality Verification Survey'
+version: 0.0.0.9000
+doi: 10.5281/zenodo.17474593
+abstract: This dataset contains detailed field survey records of borehole and handpump
+  functionality verification exercises conducted in Chiradzulu District, Malawi in
+  February 2020.
+authors:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+repository-code: https://github.com/openwashdata/handpumpstatusdata
+url: https://github.com/openwashdata/handpumpstatusdata
+date-released: '2026-09-23'
+contact:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+keywords:
+- open data
+- washdata
+- handpumps
+- boreholes
+- water point functionality
+- water supply
+- Malawi
+- handpump
+- wash
+- waterpoints
+
