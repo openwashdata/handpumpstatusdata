@@ -21,3 +21,5 @@ Date: 2026-09-23
 URL: https://github.com/openwashdata/handpumpstatusdata
 BugReports: https://github.com/openwashdata/handpumpstatusdata/issues
 X-schema.org-keywords: open data, washdata, handpumps, boreholes, water point functionality, water supply, Malawi
+X-schema.org-spatialCoverage: Chiradzulu, Malawi
+X-schema.org-temporalCoverage: 2020-02-06/2020-11-06
