@@ -3,6 +3,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17474593.svg)](https://zenodo.org/doi/10.5281/zenodo.17474593)
 [![R-CMD-check](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml)
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 This dataset contains detailed field survey records of borehole and
 handpump functionality verification exercises conducted in Chiradzulu
 District, Malawi in February 2020. Data was collected by BASEflow using
