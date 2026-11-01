@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Handpump Functionality Verification Survey - Chiradzulu, Malawi 2020
+# Handpump Functionality Verification Survey - Chiradzulu, Malawi 2020 <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -12,8 +12,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17474593.svg)](https://zenodo.org/doi/10.5281/zenodo.17474593)
 [![R-CMD-check](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/handpumpstatusdata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 This dataset contains detailed field survey records of borehole and
 handpump functionality verification exercises conducted in Chiradzulu
@@ -1336,6 +1334,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/handpumpstatusdata/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
